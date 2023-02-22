@@ -1,6 +1,4 @@
-package sortWithLambda;
-
-import model.Human;
+package sort_with_lambda;
 
 import java.util.Arrays;
 import java.util.Collections;

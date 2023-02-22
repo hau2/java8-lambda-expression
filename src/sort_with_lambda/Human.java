@@ -1,4 +1,4 @@
-package model;
+package sort_with_lambda;
 
 public class Human {
     private String name;

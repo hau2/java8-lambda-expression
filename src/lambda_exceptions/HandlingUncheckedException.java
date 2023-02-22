@@ -1,4 +1,4 @@
-package exceptions;
+package lambda_exceptions;
 
 import java.util.Arrays;
 import java.util.List;

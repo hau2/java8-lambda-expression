@@ -1,4 +1,4 @@
-package exceptions;
+package lambda_exceptions;
 
 import java.io.EOFException;
 import java.io.IOException;

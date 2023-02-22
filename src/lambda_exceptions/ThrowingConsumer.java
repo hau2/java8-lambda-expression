@@ -1,4 +1,4 @@
-package exceptions;
+package lambda_exceptions;
 
 @FunctionalInterface
 public interface ThrowingConsumer<T, E extends Exception> {
