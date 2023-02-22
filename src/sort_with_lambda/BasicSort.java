@@ -15,7 +15,12 @@ public class BasicSort {
         );
 
         // sort without lambda
-        Collections.sort(humans, (h1, h2) -> h1.getName().compareTo(h2.getName()));
+        Collections.sort(humans, new Comparator<Human>() {
+            @Override
+            public int compare(Human h1, Human h2) {
+                return h1.getName().compareTo(h2.getName());
+            }
+        });
 
         // sort with lambda
         humans.sort((Human h1, Human h2) -> h1.getName().compareTo(h2.getName()));

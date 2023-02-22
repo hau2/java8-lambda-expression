@@ -17,13 +17,39 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Animal cat = () -> System.out.println("Cat: Meow");
+        Animal cat = new Animal() {
+            @Override
+            public void makeSound() {
+                System.out.println("Cat: Meow");
+            }
+        };
         cat.makeSound(); // "Cat: Meow"
 
-        Animal dog = () -> System.out.println("Dog: Woof Woof!");
+        Animal dog = new Animal() {
+            @Override
+            public void makeSound() {
+                System.out.println("Dog: Woof Woof!");
+            }
+        };
         dog.makeSound(); // "Dog: Woof Woof!"
 
-        Animal chicken = () -> System.out.println("Chicken: Cluck-Cluck!");
+        Animal chicken = new Animal() {
+            @Override
+            public void makeSound() {
+                System.out.println("Chicken: Cluck-Cluck!");
+            }
+        };
         chicken.makeSound(); // "Chicken: Cluck-Cluck!"
+
+
+
+        Animal cat1 = () -> System.out.println("Cat: Meow");
+        cat1.makeSound(); // "Cat: Meow"
+
+        Animal dog1 = () -> System.out.println("Dog: Woof Woof!");
+        dog1.makeSound(); // "Dog: Woof Woof!"
+
+        Animal chicken1 = () -> System.out.println("Chicken: Cluck-Cluck!");
+        chicken1.makeSound(); // "Chicken: Cluck-Cluck!"
     }
 }

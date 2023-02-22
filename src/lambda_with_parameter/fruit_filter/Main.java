@@ -3,6 +3,7 @@ package lambda_with_parameter.fruit_filter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Main {
     public static List<Fruit> filterGreenFruits(List<Fruit> inventory) {
